@@ -1,0 +1,17 @@
+[package]
+name = "burak-vtk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+clap = { version = "4.2.7", features = ["derive"]}
+csv = "1.2.1"
+ndarray = "0.15.6"
+serde = { version = "1.0.163", features = ["derive"] }
+
+[dependencies.vtk]
+git = "https://github.com/fluid-Dynamics-Group/vtk"
+rev = "57a18eafc3bade61fcc69cf9959a9bd06e315fda"
